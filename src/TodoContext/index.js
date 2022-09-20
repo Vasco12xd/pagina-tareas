@@ -5,6 +5,7 @@ import { useLocalStorage } from './useLocalStorage';
 const TodoContext = React.createContext();
 
 function TodoProvider(props) {
+    
     const [openModal, setOpenModal] = React.useState(false);
   
     // Nos traemos todo el estado y las funciones de nuestra aplicación que queremos globales
