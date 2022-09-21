@@ -19,6 +19,13 @@
     text-decoration: line-through;
   }
   
+
+  svg{
+    height: 32px;
+    width: 32px;
+  }
+   
+
   .Icon {
     cursor: pointer;
     display: flex;
@@ -41,7 +48,6 @@
   
   .Icon-delete {
     position: absolute;
-    top: -24px;
     right: 0;
   }
   .Icon-delete:hover {
