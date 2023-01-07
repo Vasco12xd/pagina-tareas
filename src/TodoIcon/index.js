@@ -1,7 +1,7 @@
 import React from 'react';
 //import { ReactComponent as CheckSVG } from './check.svg';
 //import { ReactComponent as DeleteSVG } from './delete.svg';
-import './TodoIcon.css';
+import './TodoIconstyle.css';
 import { BiCheckDouble} from "react-icons/bi";
 import { BiTrash} from "react-icons/bi";
 
