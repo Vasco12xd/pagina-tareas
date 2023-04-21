@@ -31,11 +31,11 @@ function TodoForm({ addTodo, setOpenModal}) {
     return (
         <form onSubmit={onSubmit}>
             <label>Añadir nueva tarea</label>
-            <textarea 
+            <textarea   
             value={newTodoValue}
             onChange={onChange}
             placeholder="Sacar la basura"/>
-            <div>
+            <div className="TodoForm-buttonContainer">
                 <button
                 type="button"
                  onClick={onCancel}
