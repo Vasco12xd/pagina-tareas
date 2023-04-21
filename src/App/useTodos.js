@@ -1,10 +1,8 @@
 import React from 'react';
 import { useLocalStorage } from './useLocalStorage';
 
-// Al crear el contexto también podemos pasarle un valor inicial entre los paréntesis
-const TodoContext = React.createContext();
 
-function TodoProvider(props) {
+function useTodos() {
     
     const [openModal, setOpenModal] = React.useState(false);
   
@@ -58,8 +56,7 @@ function TodoProvider(props) {
   };
   
   // Retornamos nuestro proveedor con nuestro contexto en la etiqueta value, que recibirá a toda nuestra aplicación, por eso necesitamos la prop children
-  return (
-    <TodoContext.Provider value={{
+  return {
       loading,
       error,
       totalTodos,
@@ -72,10 +69,7 @@ function TodoProvider(props) {
       deleteTodo,
       openModal,
       setOpenModal,
-    }}>
-      {props.children}
-    </TodoContext.Provider>
-  );
+    };
 }
 
-export { TodoContext, TodoProvider };
+export { useTodos };
