@@ -57,19 +57,19 @@ function useTodos() {
   
   // Retornamos nuestro proveedor con nuestro contexto en la etiqueta value, que recibirá a toda nuestra aplicación, por eso necesitamos la prop children
   return {
-      loading,
-      error,
-      totalTodos,
-      completedTodos,
-      searchValue,
-      setSearchValue,
-      searchedTodos,
-      addTodo,
-      completeTodo,
-      deleteTodo,
-      openModal,
-      setOpenModal,
-    };
+    loading,
+    error,
+    totalTodos,
+    completedTodos,
+    searchValue,
+    setSearchValue,
+    searchedTodos,
+    addTodo,
+    completeTodo,
+    deleteTodo,
+    openModal,
+    setOpenModal,
+  };
 }
 
 export { useTodos };

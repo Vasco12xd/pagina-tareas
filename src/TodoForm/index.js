@@ -29,28 +29,29 @@ function TodoForm({ addTodo, setOpenModal}) {
   };
 
     return (
-        <form onSubmit={onSubmit}>
-            <label>Añadir nueva tarea</label>
-            <textarea   
-            value={newTodoValue}
-            onChange={onChange}
-            placeholder="Sacar la basura"/>
-            <div className="TodoForm-buttonContainer">
-                <button
-                type="button"
-                 onClick={onCancel}
-                 className="TodoForm-button TodoForm-button--cancel"
-                 >
-                    Cancelar
-                 </button>
-                <button
-                type="submit"
-                className="TodoForm-button TodoForm-button--add"
-                >
-                    Añadir
-                </button>
-            </div>
-        </form>
+      <form onSubmit={onSubmit}>
+        <label>Añadir nueva tarea</label>
+        <textarea
+          value={newTodoValue}
+          onChange={onChange}
+          placeholder="Sacar la basura"
+        />
+        <div className="TodoForm-buttonContainer">
+          <button
+            type="button"
+            onClick={onCancel}
+            className="TodoForm-button TodoForm-button--cancel"
+          >
+            Cancelar
+          </button>
+          <button
+            type="submit"
+            className="TodoForm-button TodoForm-button--add"
+          >
+            Añadir
+          </button>
+        </div>
+      </form>
     );
 }
 
