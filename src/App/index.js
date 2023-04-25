@@ -44,7 +44,9 @@ function App() {
         onError={() => <TodosError />}
         onLoading={() => <TodosLoading />}
         onEmptyTodos={() => <EmptyTodos />}
-        onEmptySearchResult={(searchText) => <p>No hay resultados {searchText}</p> }
+        onEmptySearchResult={(searchText) => (
+          <p>No hay resultados {searchText}</p>
+        )}
         /* render={(todo) => (
           <TodoItem
             key={todo.text}
@@ -55,7 +57,7 @@ function App() {
           />
         )} */
       >
-        {todo => (
+        {(todo) => (
           <TodoItem
             key={todo.text}
             text={todo.text}
@@ -64,10 +66,7 @@ function App() {
             onDelete={() => deleteTodo(todo.text)}
           />
         )}
-
-</TodoList>
-
-
+      </TodoList>
 
       {!!openModal && (
         <Modal>
